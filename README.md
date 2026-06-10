@@ -59,20 +59,13 @@ CrystalMind 将抽象的哲学思想，转化为了可运行的代码模块：
 
 ```mermaid
 graph TD
-    A[生态网络 (Graph)] -->|拓扑数据| M(度量层)
-    M -->|U/D/A/H 快照| T(思考层)
+    A[生态网络 Graph] -->|拓扑数据| M(度量层 Measurement)
+    M -->|U/D/A/H 快照| T(思考层 Thinking)
     T -->|调谐策略/权重| M
-    T -->|执行指令| E(执行层)
+    T -->|执行指令| E(执行层 Execution)
     E -->|工具操作| W[外部世界]
     E -->|审计日志| L[(实践介入记录)]
-    M -->|边界告警| B(拓扑硬约束)
-    
-    subgraph CrystalMind 核心
-        M
-        T
-        E
-        B
-    end
+    M -->|边界告警| B(拓扑硬约束 Boundary)
 ```
 
 ## 🛠️ 自定义配置
