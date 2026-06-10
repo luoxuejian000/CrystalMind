@@ -1,0 +1,19 @@
+lambda_weights:
+  U: 0.4
+  D: 0.3
+  A: 0.3
+
+boundary:
+  U_min: 0.3
+  D_min: 0.4
+  A_max: 0.6
+
+resonance_engine:
+  alpha: 0.1
+  beta: 0.05
+  gamma: 0.02
+  initial_temperature: 1.0
+
+measurement:
+  interval: 1.0
+  evaluator_type: "networkx"

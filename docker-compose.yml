@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  crystal-mind:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    restart: unless-stopped

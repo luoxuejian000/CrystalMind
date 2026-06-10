@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "crystal_mind"
+version = "2.0.0"
+description = "赋予复杂系统自我感知与安全边界的智能内核"
+authors = [{name = "李广好", email = "luoxuejian000@example.com"}]
+license = "Apache-2.0"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=1.9.0",
+    "networkx>=3.0",
+    "python-louvain>=0.16",
+    "pyyaml>=5.1",
+    "click>=8.0",
+    "rich>=10.0",
+    "streamlit>=1.25",
+    "plotly>=5.14",
+]
+
+[project.scripts]
+crystal-mind = "crystal_mind.cli:main"
